@@ -1,0 +1,13 @@
+D:\Master_vb\Payroll\bin\Debug\Payroll.exe.config
+D:\Master_vb\Payroll\bin\Debug\Payroll.exe
+D:\Master_vb\Payroll\bin\Debug\Payroll.pdb
+D:\Master_vb\Payroll\bin\Debug\Payroll.xml
+D:\Master_vb\Payroll\obj\Debug\Payroll.vbprojAssemblyReference.cache
+D:\Master_vb\Payroll\obj\Debug\Payroll.Form1.resources
+D:\Master_vb\Payroll\obj\Debug\Payroll.Resources.resources
+D:\Master_vb\Payroll\obj\Debug\Payroll.vbproj.GenerateResource.cache
+D:\Master_vb\Payroll\obj\Debug\Payroll.vbproj.CoreCompileInputs.cache
+D:\Master_vb\Payroll\obj\Debug\Payroll.exe
+D:\Master_vb\Payroll\obj\Debug\Payroll.xml
+D:\Master_vb\Payroll\obj\Debug\Payroll.pdb
+D:\Master_vb\Payroll\obj\Debug\Payroll.Form2.resources

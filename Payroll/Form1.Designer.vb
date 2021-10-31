@@ -24,8 +24,6 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.PeriodS = New System.Windows.Forms.Label()
         Me.PeriodE = New System.Windows.Forms.Label()
-        Me.PeriodSTB = New System.Windows.Forms.TextBox()
-        Me.PeriodETB = New System.Windows.Forms.TextBox()
         Me.Hours = New System.Windows.Forms.Label()
         Me.Allowences = New System.Windows.Forms.Label()
         Me.Basic = New System.Windows.Forms.Label()
@@ -48,225 +46,256 @@ Partial Class Form1
         Me.CalculateB = New System.Windows.Forms.Button()
         Me.SaveB = New System.Windows.Forms.Button()
         Me.CloseB = New System.Windows.Forms.Button()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
         Me.SuspendLayout()
         '
         'PeriodS
         '
         Me.PeriodS.AutoSize = True
-        Me.PeriodS.Location = New System.Drawing.Point(24, 13)
+        Me.PeriodS.Location = New System.Drawing.Point(32, 16)
+        Me.PeriodS.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.PeriodS.Name = "PeriodS"
-        Me.PeriodS.Size = New System.Drawing.Size(65, 13)
+        Me.PeriodS.Size = New System.Drawing.Size(87, 17)
         Me.PeriodS.TabIndex = 0
         Me.PeriodS.Text = "Period Start:"
         '
         'PeriodE
         '
         Me.PeriodE.AutoSize = True
-        Me.PeriodE.Location = New System.Drawing.Point(187, 13)
+        Me.PeriodE.Location = New System.Drawing.Point(318, 16)
+        Me.PeriodE.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.PeriodE.Name = "PeriodE"
-        Me.PeriodE.Size = New System.Drawing.Size(62, 13)
+        Me.PeriodE.Size = New System.Drawing.Size(82, 17)
         Me.PeriodE.TabIndex = 1
         Me.PeriodE.Text = "Period End:"
-        '
-        'PeriodSTB
-        '
-        Me.PeriodSTB.Location = New System.Drawing.Point(27, 29)
-        Me.PeriodSTB.Name = "PeriodSTB"
-        Me.PeriodSTB.Size = New System.Drawing.Size(120, 20)
-        Me.PeriodSTB.TabIndex = 2
-        '
-        'PeriodETB
-        '
-        Me.PeriodETB.Location = New System.Drawing.Point(190, 29)
-        Me.PeriodETB.Name = "PeriodETB"
-        Me.PeriodETB.Size = New System.Drawing.Size(119, 20)
-        Me.PeriodETB.TabIndex = 3
         '
         'Hours
         '
         Me.Hours.AutoSize = True
-        Me.Hours.Location = New System.Drawing.Point(24, 87)
+        Me.Hours.Location = New System.Drawing.Point(32, 107)
+        Me.Hours.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Hours.Name = "Hours"
-        Me.Hours.Size = New System.Drawing.Size(99, 13)
+        Me.Hours.Size = New System.Drawing.Size(129, 17)
         Me.Hours.TabIndex = 4
         Me.Hours.Text = "No. Hours Worked:"
         '
         'Allowences
         '
         Me.Allowences.AutoSize = True
-        Me.Allowences.Location = New System.Drawing.Point(24, 117)
+        Me.Allowences.Location = New System.Drawing.Point(32, 144)
+        Me.Allowences.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Allowences.Name = "Allowences"
-        Me.Allowences.Size = New System.Drawing.Size(64, 13)
+        Me.Allowences.Size = New System.Drawing.Size(82, 17)
         Me.Allowences.TabIndex = 5
         Me.Allowences.Text = "Allowences:"
         '
         'Basic
         '
         Me.Basic.AutoSize = True
-        Me.Basic.Location = New System.Drawing.Point(24, 146)
+        Me.Basic.Location = New System.Drawing.Point(32, 180)
+        Me.Basic.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Basic.Name = "Basic"
-        Me.Basic.Size = New System.Drawing.Size(57, 13)
+        Me.Basic.Size = New System.Drawing.Size(74, 17)
         Me.Basic.TabIndex = 6
         Me.Basic.Text = "Basic Pay:"
         '
         'Salary
         '
         Me.Salary.AutoSize = True
-        Me.Salary.Location = New System.Drawing.Point(24, 176)
+        Me.Salary.Location = New System.Drawing.Point(32, 217)
+        Me.Salary.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Salary.Name = "Salary"
-        Me.Salary.Size = New System.Drawing.Size(66, 13)
+        Me.Salary.Size = New System.Drawing.Size(88, 17)
         Me.Salary.TabIndex = 7
         Me.Salary.Text = "Total Salary:"
         '
         'Deduction
         '
         Me.Deduction.AutoSize = True
-        Me.Deduction.Location = New System.Drawing.Point(368, 67)
+        Me.Deduction.Location = New System.Drawing.Point(491, 82)
+        Me.Deduction.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Deduction.Name = "Deduction"
-        Me.Deduction.Size = New System.Drawing.Size(71, 13)
+        Me.Deduction.Size = New System.Drawing.Size(89, 17)
         Me.Deduction.TabIndex = 8
         Me.Deduction.Text = "DEDUCTION"
         '
         'Socso
         '
         Me.Socso.AutoSize = True
-        Me.Socso.Location = New System.Drawing.Point(368, 117)
+        Me.Socso.Location = New System.Drawing.Point(491, 144)
+        Me.Socso.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Socso.Name = "Socso"
-        Me.Socso.Size = New System.Drawing.Size(47, 13)
+        Me.Socso.Size = New System.Drawing.Size(61, 17)
         Me.Socso.TabIndex = 9
         Me.Socso.Text = "SOCSO:"
         '
         'Tax
         '
         Me.Tax.AutoSize = True
-        Me.Tax.Location = New System.Drawing.Point(368, 146)
+        Me.Tax.Location = New System.Drawing.Point(491, 180)
+        Me.Tax.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Tax.Name = "Tax"
-        Me.Tax.Size = New System.Drawing.Size(66, 13)
+        Me.Tax.Size = New System.Drawing.Size(84, 17)
         Me.Tax.TabIndex = 10
         Me.Tax.Text = "Income Tax:"
         '
         'Insurance
         '
         Me.Insurance.AutoSize = True
-        Me.Insurance.Location = New System.Drawing.Point(368, 176)
+        Me.Insurance.Location = New System.Drawing.Point(491, 217)
+        Me.Insurance.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Insurance.Name = "Insurance"
-        Me.Insurance.Size = New System.Drawing.Size(117, 13)
+        Me.Insurance.Size = New System.Drawing.Size(155, 17)
         Me.Insurance.TabIndex = 11
         Me.Insurance.Text = "Employment Insurance:"
         '
         'Total
         '
         Me.Total.AutoSize = True
-        Me.Total.Location = New System.Drawing.Point(24, 272)
+        Me.Total.Location = New System.Drawing.Point(32, 335)
+        Me.Total.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Total.Name = "Total"
-        Me.Total.Size = New System.Drawing.Size(112, 13)
+        Me.Total.Size = New System.Drawing.Size(143, 17)
         Me.Total.TabIndex = 12
         Me.Total.Text = "TOTAL DEDUCTION:"
         '
         'NetPay
         '
         Me.NetPay.AutoSize = True
-        Me.NetPay.Location = New System.Drawing.Point(24, 303)
+        Me.NetPay.Location = New System.Drawing.Point(32, 373)
+        Me.NetPay.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.NetPay.Name = "NetPay"
-        Me.NetPay.Size = New System.Drawing.Size(114, 13)
+        Me.NetPay.Size = New System.Drawing.Size(152, 17)
         Me.NetPay.TabIndex = 13
         Me.NetPay.Text = "Net Pay for the Period:"
         '
         'HoursTB
         '
-        Me.HoursTB.Location = New System.Drawing.Point(129, 84)
+        Me.HoursTB.Location = New System.Drawing.Point(172, 103)
+        Me.HoursTB.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.HoursTB.Name = "HoursTB"
-        Me.HoursTB.Size = New System.Drawing.Size(100, 20)
+        Me.HoursTB.Size = New System.Drawing.Size(132, 22)
         Me.HoursTB.TabIndex = 14
         '
         'AllowencesTB
         '
-        Me.AllowencesTB.Location = New System.Drawing.Point(129, 114)
+        Me.AllowencesTB.Location = New System.Drawing.Point(172, 140)
+        Me.AllowencesTB.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.AllowencesTB.Name = "AllowencesTB"
-        Me.AllowencesTB.Size = New System.Drawing.Size(100, 20)
+        Me.AllowencesTB.Size = New System.Drawing.Size(132, 22)
         Me.AllowencesTB.TabIndex = 15
         '
         'BasicTB
         '
-        Me.BasicTB.Location = New System.Drawing.Point(129, 143)
+        Me.BasicTB.Location = New System.Drawing.Point(172, 176)
+        Me.BasicTB.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BasicTB.Name = "BasicTB"
-        Me.BasicTB.Size = New System.Drawing.Size(100, 20)
+        Me.BasicTB.Size = New System.Drawing.Size(132, 22)
         Me.BasicTB.TabIndex = 16
         '
         'SalaryTB
         '
-        Me.SalaryTB.Location = New System.Drawing.Point(129, 173)
+        Me.SalaryTB.Location = New System.Drawing.Point(172, 213)
+        Me.SalaryTB.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SalaryTB.Name = "SalaryTB"
-        Me.SalaryTB.Size = New System.Drawing.Size(100, 20)
+        Me.SalaryTB.ReadOnly = True
+        Me.SalaryTB.Size = New System.Drawing.Size(132, 22)
         Me.SalaryTB.TabIndex = 17
         '
         'SocsoTB
         '
-        Me.SocsoTB.Location = New System.Drawing.Point(491, 114)
+        Me.SocsoTB.Location = New System.Drawing.Point(655, 140)
+        Me.SocsoTB.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SocsoTB.Name = "SocsoTB"
-        Me.SocsoTB.Size = New System.Drawing.Size(100, 20)
+        Me.SocsoTB.Size = New System.Drawing.Size(132, 22)
         Me.SocsoTB.TabIndex = 18
         '
         'TaxTB
         '
-        Me.TaxTB.Location = New System.Drawing.Point(491, 143)
+        Me.TaxTB.Location = New System.Drawing.Point(655, 176)
+        Me.TaxTB.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TaxTB.Name = "TaxTB"
-        Me.TaxTB.Size = New System.Drawing.Size(100, 20)
+        Me.TaxTB.Size = New System.Drawing.Size(132, 22)
         Me.TaxTB.TabIndex = 19
         '
         'InsuranceTB
         '
-        Me.InsuranceTB.Location = New System.Drawing.Point(491, 173)
+        Me.InsuranceTB.Location = New System.Drawing.Point(655, 213)
+        Me.InsuranceTB.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.InsuranceTB.Name = "InsuranceTB"
-        Me.InsuranceTB.Size = New System.Drawing.Size(100, 20)
+        Me.InsuranceTB.Size = New System.Drawing.Size(132, 22)
         Me.InsuranceTB.TabIndex = 20
         '
         'NetPayTB
         '
-        Me.NetPayTB.Location = New System.Drawing.Point(144, 300)
+        Me.NetPayTB.Location = New System.Drawing.Point(192, 369)
+        Me.NetPayTB.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.NetPayTB.Name = "NetPayTB"
-        Me.NetPayTB.Size = New System.Drawing.Size(100, 20)
+        Me.NetPayTB.ReadOnly = True
+        Me.NetPayTB.Size = New System.Drawing.Size(132, 22)
         Me.NetPayTB.TabIndex = 21
         '
         'TotalTB
         '
-        Me.TotalTB.Location = New System.Drawing.Point(144, 269)
+        Me.TotalTB.Location = New System.Drawing.Point(192, 331)
+        Me.TotalTB.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TotalTB.Name = "TotalTB"
-        Me.TotalTB.Size = New System.Drawing.Size(100, 20)
+        Me.TotalTB.ReadOnly = True
+        Me.TotalTB.Size = New System.Drawing.Size(132, 22)
         Me.TotalTB.TabIndex = 22
         '
         'CalculateB
         '
-        Me.CalculateB.Location = New System.Drawing.Point(261, 215)
+        Me.CalculateB.Location = New System.Drawing.Point(348, 265)
+        Me.CalculateB.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CalculateB.Name = "CalculateB"
-        Me.CalculateB.Size = New System.Drawing.Size(75, 23)
+        Me.CalculateB.Size = New System.Drawing.Size(100, 28)
         Me.CalculateB.TabIndex = 23
         Me.CalculateB.Text = "Calculate"
         Me.CalculateB.UseVisualStyleBackColor = True
         '
         'SaveB
         '
-        Me.SaveB.Location = New System.Drawing.Point(435, 293)
+        Me.SaveB.Location = New System.Drawing.Point(580, 361)
+        Me.SaveB.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SaveB.Name = "SaveB"
-        Me.SaveB.Size = New System.Drawing.Size(75, 23)
+        Me.SaveB.Size = New System.Drawing.Size(100, 28)
         Me.SaveB.TabIndex = 24
         Me.SaveB.Text = "Save"
         Me.SaveB.UseVisualStyleBackColor = True
         '
         'CloseB
         '
-        Me.CloseB.Location = New System.Drawing.Point(516, 293)
+        Me.CloseB.Location = New System.Drawing.Point(688, 361)
+        Me.CloseB.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CloseB.Name = "CloseB"
-        Me.CloseB.Size = New System.Drawing.Size(75, 23)
+        Me.CloseB.Size = New System.Drawing.Size(100, 28)
         Me.CloseB.TabIndex = 25
         Me.CloseB.Text = "Close"
         Me.CloseB.UseVisualStyleBackColor = True
         '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(35, 36)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(220, 22)
+        Me.DateTimePicker1.TabIndex = 26
+        '
+        'DateTimePicker2
+        '
+        Me.DateTimePicker2.Location = New System.Drawing.Point(321, 36)
+        Me.DateTimePicker2.Name = "DateTimePicker2"
+        Me.DateTimePicker2.Size = New System.Drawing.Size(231, 22)
+        Me.DateTimePicker2.TabIndex = 27
+        '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1067, 554)
+        Me.Controls.Add(Me.DateTimePicker2)
+        Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.CloseB)
         Me.Controls.Add(Me.SaveB)
         Me.Controls.Add(Me.CalculateB)
@@ -289,10 +318,9 @@ Partial Class Form1
         Me.Controls.Add(Me.Basic)
         Me.Controls.Add(Me.Allowences)
         Me.Controls.Add(Me.Hours)
-        Me.Controls.Add(Me.PeriodETB)
-        Me.Controls.Add(Me.PeriodSTB)
         Me.Controls.Add(Me.PeriodE)
         Me.Controls.Add(Me.PeriodS)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -302,8 +330,6 @@ Partial Class Form1
 
     Friend WithEvents PeriodS As Label
     Friend WithEvents PeriodE As Label
-    Friend WithEvents PeriodSTB As TextBox
-    Friend WithEvents PeriodETB As TextBox
     Friend WithEvents Hours As Label
     Friend WithEvents Allowences As Label
     Friend WithEvents Basic As Label
@@ -326,4 +352,6 @@ Partial Class Form1
     Friend WithEvents CalculateB As Button
     Friend WithEvents SaveB As Button
     Friend WithEvents CloseB As Button
+    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents DateTimePicker2 As DateTimePicker
 End Class
