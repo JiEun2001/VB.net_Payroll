@@ -11,3 +11,6 @@ D:\Master_vb\Payroll\obj\Debug\Payroll.exe
 D:\Master_vb\Payroll\obj\Debug\Payroll.xml
 D:\Master_vb\Payroll\obj\Debug\Payroll.pdb
 D:\Master_vb\Payroll\obj\Debug\Payroll.Form2.resources
+D:\Master_vb\Payroll\obj\Debug\Payroll.Form3.resources
+D:\Master_vb\Payroll\obj\Debug\Payroll.Form4.resources
+D:\Master_vb\Payroll\bin\Debug\vbproject.accdb

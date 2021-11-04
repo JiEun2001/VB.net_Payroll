@@ -38,16 +38,16 @@ Partial Class Form2
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(385, 148)
+        Me.Button1.Location = New System.Drawing.Point(316, 148)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(135, 23)
         Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Employee"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Exitbtn
         '
-        Me.Exitbtn.Location = New System.Drawing.Point(273, 280)
+        Me.Exitbtn.Location = New System.Drawing.Point(264, 219)
         Me.Exitbtn.Name = "Exitbtn"
         Me.Exitbtn.Size = New System.Drawing.Size(75, 23)
         Me.Exitbtn.TabIndex = 2

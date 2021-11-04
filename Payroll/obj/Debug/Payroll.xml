@@ -22,5 +22,70 @@ Payroll
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="T:Payroll.vbprojectDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Payroll.vbprojectDataSet.LogInDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Payroll.vbprojectDataSet.LogInRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Payroll.vbprojectDataSet.LogInRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Payroll.vbprojectDataSetTableAdapters.LogInTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Payroll.vbprojectDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Payroll.vbprojectDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Payroll.vbprojectDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Payroll.vbprojectDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Payroll.vbprojectDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Payroll.vbprojectDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Payroll.vbprojectDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Payroll.vbprojectDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Payroll.vbprojectDataSetTableAdapters.TableAdapterManager.UpdateAll(Payroll.vbprojectDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Payroll.vbprojectDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Payroll.vbprojectDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
 </members>
 </doc>

@@ -15,8 +15,12 @@
     End Sub
 
     Private Sub Exitbtn_Click(sender As Object, e As EventArgs) Handles Exitbtn.Click
+        Form4.Show()
         Me.Close()
     End Sub
 
-
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Form3.Show()
+        Me.Hide()
+    End Sub
 End Class
