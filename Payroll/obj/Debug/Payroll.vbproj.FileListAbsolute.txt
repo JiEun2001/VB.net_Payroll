@@ -14,3 +14,19 @@ D:\Master_vb\Payroll\obj\Debug\Payroll.Form2.resources
 D:\Master_vb\Payroll\obj\Debug\Payroll.Form3.resources
 D:\Master_vb\Payroll\obj\Debug\Payroll.Form4.resources
 D:\Master_vb\Payroll\bin\Debug\vbproject.accdb
+C:\Users\ASUS\OneDrive\Documents\sem 5\vb.Net\Project\Payrol design\Payroll\bin\Debug\vbproject.accdb
+C:\Users\ASUS\OneDrive\Documents\sem 5\vb.Net\Project\Payrol design\Payroll\bin\Debug\Payroll.exe.config
+C:\Users\ASUS\OneDrive\Documents\sem 5\vb.Net\Project\Payrol design\Payroll\bin\Debug\Payroll.exe
+C:\Users\ASUS\OneDrive\Documents\sem 5\vb.Net\Project\Payrol design\Payroll\bin\Debug\Payroll.pdb
+C:\Users\ASUS\OneDrive\Documents\sem 5\vb.Net\Project\Payrol design\Payroll\bin\Debug\Payroll.xml
+C:\Users\ASUS\OneDrive\Documents\sem 5\vb.Net\Project\Payrol design\Payroll\obj\Debug\Payroll.vbproj.AssemblyReference.cache
+C:\Users\ASUS\OneDrive\Documents\sem 5\vb.Net\Project\Payrol design\Payroll\obj\Debug\Payroll.Form1.resources
+C:\Users\ASUS\OneDrive\Documents\sem 5\vb.Net\Project\Payrol design\Payroll\obj\Debug\Payroll.Form2.resources
+C:\Users\ASUS\OneDrive\Documents\sem 5\vb.Net\Project\Payrol design\Payroll\obj\Debug\Payroll.Form3.resources
+C:\Users\ASUS\OneDrive\Documents\sem 5\vb.Net\Project\Payrol design\Payroll\obj\Debug\Payroll.Form4.resources
+C:\Users\ASUS\OneDrive\Documents\sem 5\vb.Net\Project\Payrol design\Payroll\obj\Debug\Payroll.Resources.resources
+C:\Users\ASUS\OneDrive\Documents\sem 5\vb.Net\Project\Payrol design\Payroll\obj\Debug\Payroll.vbproj.GenerateResource.cache
+C:\Users\ASUS\OneDrive\Documents\sem 5\vb.Net\Project\Payrol design\Payroll\obj\Debug\Payroll.vbproj.CoreCompileInputs.cache
+C:\Users\ASUS\OneDrive\Documents\sem 5\vb.Net\Project\Payrol design\Payroll\obj\Debug\Payroll.exe
+C:\Users\ASUS\OneDrive\Documents\sem 5\vb.Net\Project\Payrol design\Payroll\obj\Debug\Payroll.xml
+C:\Users\ASUS\OneDrive\Documents\sem 5\vb.Net\Project\Payrol design\Payroll\obj\Debug\Payroll.pdb
