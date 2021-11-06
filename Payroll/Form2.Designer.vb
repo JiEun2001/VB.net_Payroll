@@ -30,9 +30,9 @@ Partial Class Form2
         '
         'Calculatorbtn
         '
-        Me.Calculatorbtn.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Calculatorbtn.BackColor = System.Drawing.Color.Transparent
         Me.Calculatorbtn.Location = New System.Drawing.Point(25, 88)
-        Me.Calculatorbtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Calculatorbtn.Margin = New System.Windows.Forms.Padding(2)
         Me.Calculatorbtn.Name = "Calculatorbtn"
         Me.Calculatorbtn.Size = New System.Drawing.Size(125, 32)
         Me.Calculatorbtn.TabIndex = 0
@@ -41,9 +41,9 @@ Partial Class Form2
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Button1.BackColor = System.Drawing.Color.Transparent
         Me.Button1.Location = New System.Drawing.Point(222, 88)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(137, 32)
         Me.Button1.TabIndex = 1
@@ -52,9 +52,9 @@ Partial Class Form2
         '
         'Exitbtn
         '
-        Me.Exitbtn.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Exitbtn.BackColor = System.Drawing.Color.Transparent
         Me.Exitbtn.Location = New System.Drawing.Point(154, 142)
-        Me.Exitbtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Exitbtn.Margin = New System.Windows.Forms.Padding(2)
         Me.Exitbtn.Name = "Exitbtn"
         Me.Exitbtn.Size = New System.Drawing.Size(65, 30)
         Me.Exitbtn.TabIndex = 2
@@ -71,7 +71,7 @@ Partial Class Form2
         Me.Controls.Add(Me.Exitbtn)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Calculatorbtn)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form2"
         Me.Text = "Form2"
         Me.ResumeLayout(False)

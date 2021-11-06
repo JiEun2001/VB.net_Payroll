@@ -65,7 +65,7 @@ Partial Class Form3
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(267, 39)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersWidth = 51
@@ -75,9 +75,9 @@ Partial Class Form3
         '
         'btnAdd
         '
-        Me.btnAdd.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.btnAdd.BackColor = System.Drawing.Color.Transparent
         Me.btnAdd.Location = New System.Drawing.Point(69, 352)
-        Me.btnAdd.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnAdd.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(68, 26)
         Me.btnAdd.TabIndex = 1
@@ -86,9 +86,9 @@ Partial Class Form3
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Button2.BackColor = System.Drawing.Color.Transparent
         Me.Button2.Location = New System.Drawing.Point(316, 352)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(68, 26)
         Me.Button2.TabIndex = 2
@@ -97,9 +97,9 @@ Partial Class Form3
         '
         'btnDelete
         '
-        Me.btnDelete.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.btnDelete.BackColor = System.Drawing.Color.Transparent
         Me.btnDelete.Location = New System.Drawing.Point(435, 352)
-        Me.btnDelete.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(2)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(68, 26)
         Me.btnDelete.TabIndex = 3
@@ -108,9 +108,9 @@ Partial Class Form3
         '
         'Button4
         '
-        Me.Button4.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Button4.BackColor = System.Drawing.Color.Transparent
         Me.Button4.Location = New System.Drawing.Point(649, 352)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(2)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(68, 26)
         Me.Button4.TabIndex = 4
@@ -131,9 +131,9 @@ Partial Class Form3
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.tbID)
         Me.GroupBox1.Location = New System.Drawing.Point(11, 39)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Size = New System.Drawing.Size(239, 249)
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
@@ -152,7 +152,7 @@ Partial Class Form3
         'tbPosition
         '
         Me.tbPosition.Location = New System.Drawing.Point(75, 190)
-        Me.tbPosition.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tbPosition.Margin = New System.Windows.Forms.Padding(2)
         Me.tbPosition.Name = "tbPosition"
         Me.tbPosition.Size = New System.Drawing.Size(142, 20)
         Me.tbPosition.TabIndex = 8
@@ -170,7 +170,7 @@ Partial Class Form3
         'tbPhoneNumber
         '
         Me.tbPhoneNumber.Location = New System.Drawing.Point(75, 150)
-        Me.tbPhoneNumber.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tbPhoneNumber.Margin = New System.Windows.Forms.Padding(2)
         Me.tbPhoneNumber.Name = "tbPhoneNumber"
         Me.tbPhoneNumber.Size = New System.Drawing.Size(142, 20)
         Me.tbPhoneNumber.TabIndex = 6
@@ -188,7 +188,7 @@ Partial Class Form3
         'tbTimeSchedule
         '
         Me.tbTimeSchedule.Location = New System.Drawing.Point(75, 112)
-        Me.tbTimeSchedule.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tbTimeSchedule.Margin = New System.Windows.Forms.Padding(2)
         Me.tbTimeSchedule.Name = "tbTimeSchedule"
         Me.tbTimeSchedule.Size = New System.Drawing.Size(142, 20)
         Me.tbTimeSchedule.TabIndex = 4
@@ -206,7 +206,7 @@ Partial Class Form3
         'tbName
         '
         Me.tbName.Location = New System.Drawing.Point(75, 72)
-        Me.tbName.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tbName.Margin = New System.Windows.Forms.Padding(2)
         Me.tbName.Name = "tbName"
         Me.tbName.Size = New System.Drawing.Size(142, 20)
         Me.tbName.TabIndex = 2
@@ -224,7 +224,7 @@ Partial Class Form3
         'tbID
         '
         Me.tbID.Location = New System.Drawing.Point(75, 33)
-        Me.tbID.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tbID.Margin = New System.Windows.Forms.Padding(2)
         Me.tbID.Name = "tbID"
         Me.tbID.Size = New System.Drawing.Size(142, 20)
         Me.tbID.TabIndex = 0
@@ -260,9 +260,9 @@ Partial Class Form3
         '
         'btnClear
         '
-        Me.btnClear.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.btnClear.BackColor = System.Drawing.Color.Transparent
         Me.btnClear.Location = New System.Drawing.Point(191, 352)
-        Me.btnClear.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnClear.Margin = New System.Windows.Forms.Padding(2)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(68, 26)
         Me.btnClear.TabIndex = 6
@@ -283,7 +283,7 @@ Partial Class Form3
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form3"
         Me.Text = "Form3"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

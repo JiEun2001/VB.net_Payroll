@@ -232,7 +232,7 @@ Partial Class Form1
         '
         'CalculateB
         '
-        Me.CalculateB.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.CalculateB.BackColor = System.Drawing.Color.Transparent
         Me.CalculateB.Location = New System.Drawing.Point(12, 274)
         Me.CalculateB.Name = "CalculateB"
         Me.CalculateB.Size = New System.Drawing.Size(83, 31)
@@ -242,7 +242,7 @@ Partial Class Form1
         '
         'CloseB
         '
-        Me.CloseB.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.CloseB.BackColor = System.Drawing.Color.Transparent
         Me.CloseB.Location = New System.Drawing.Point(501, 325)
         Me.CloseB.Name = "CloseB"
         Me.CloseB.Size = New System.Drawing.Size(77, 29)
@@ -253,7 +253,7 @@ Partial Class Form1
         'DateTimePicker1
         '
         Me.DateTimePicker1.Location = New System.Drawing.Point(26, 29)
-        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(2)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(184, 20)
         Me.DateTimePicker1.TabIndex = 26
@@ -261,7 +261,7 @@ Partial Class Form1
         'DateTimePicker2
         '
         Me.DateTimePicker2.Location = New System.Drawing.Point(241, 29)
-        Me.DateTimePicker2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DateTimePicker2.Margin = New System.Windows.Forms.Padding(2)
         Me.DateTimePicker2.Name = "DateTimePicker2"
         Me.DateTimePicker2.Size = New System.Drawing.Size(192, 20)
         Me.DateTimePicker2.TabIndex = 27
@@ -282,7 +282,7 @@ Partial Class Form1
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"3", "4", "5"})
         Me.ComboBox1.Location = New System.Drawing.Point(145, 60)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(101, 21)
         Me.ComboBox1.TabIndex = 29
