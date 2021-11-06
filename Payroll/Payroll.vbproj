@@ -119,6 +119,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>vbprojectDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="vbprojectDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vbprojectDataSet1.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -161,6 +166,17 @@
     </None>
     <None Include="vbprojectDataSet.xss">
       <DependentUpon>vbprojectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="vbprojectDataSet1.xsc">
+      <DependentUpon>vbprojectDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="vbprojectDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>vbprojectDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="vbprojectDataSet1.xss">
+      <DependentUpon>vbprojectDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
