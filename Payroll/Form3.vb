@@ -1,6 +1,6 @@
 ﻿Imports System.Data.OleDb
 Public Class Form3
-    Dim connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Master_vb\Payroll\vbproject.accdb")
+    Dim connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\vbproject.accdb")
     Protected Overrides ReadOnly Property CreateParams As System.Windows.Forms.CreateParams
         Get
             Dim par As CreateParams = MyBase.CreateParams
