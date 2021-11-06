@@ -96,4 +96,8 @@
         End If
 
     End Sub
+
+    Private Sub NetPay_Click(sender As Object, e As EventArgs) Handles NetPay.Click
+
+    End Sub
 End Class
