@@ -42,7 +42,7 @@
         'Label1.Text = totaldays
         If Convert.ToInt32(countdays.Days) >= 0 Then
             'total salary
-            Label1.Text = totaldays
+            tbtotaldaywork.Text = totaldays
             If AllowencesTB.Text.Equals("") Then
                 AllowencesTB.Text = "0"
             End If
@@ -62,22 +62,22 @@
                 Else
 
                     If CInt(InsuranceTB.Text) < 0 Or CInt(InsuranceTB.Text) > 100 Then
-                        MsgBox("Please insert Employment Insurance from 1 to 100", MsgBoxStyle.Exclamation)
+                        MsgBox("Please insert Employment Insurance from 0 to 100", MsgBoxStyle.Exclamation)
                     Else
                         totalsalarychange = Convert.ToDouble(totalsalary)
 
                         socso = Convert.ToDouble(ComboBox1.SelectedItem) / 100
-                        Label2.Text = totalsalarychange
+                        'Label2.Text = totalsalarychange
                         totalsalarychange = totalsalarychange - (totalsalarychange * socso)
-                        Label3.Text = Math.Round(totalsalarychange, 2)
+                        'Label3.Text = Math.Round(totalsalarychange, 2)
 
                         tax = Convert.ToDouble(TaxTB.Text) / 100
                         totalsalarychange = totalsalarychange - (totalsalarychange * tax)
-                        Label4.Text = Math.Round(totalsalarychange, 2)
+                        'Label4.Text = Math.Round(totalsalarychange, 2)
 
                         insurance = Convert.ToDouble(InsuranceTB.Text) / 100
                         totalsalarychange = totalsalarychange - (totalsalarychange * insurance)
-                        Label5.Text = Math.Round(totalsalarychange, 2)
+                        'Label5.Text = Math.Round(totalsalarychange, 2)
 
 
                         totaldeduction = totalsalary - totalsalarychange
@@ -98,6 +98,54 @@
     End Sub
 
     Private Sub NetPay_Click(sender As Object, e As EventArgs) Handles NetPay.Click
+
+    End Sub
+
+
+
+
+
+    Private Sub btnPrint_Click(sender As Object, e As EventArgs) Handles btnPrint.Click
+        txtreceipt.Text = ""
+
+        txtreceipt.AppendText("" + vbNewLine)
+        txtreceipt.AppendText("" + vbNewLine)
+
+        txtreceipt.AppendText(vbTab + vbTab + vbTab + vbTab + vbTab & "PAY-SLIP" + vbNewLine)
+        txtreceipt.AppendText("" + vbNewLine)
+        txtreceipt.AppendText("" + vbNewLine)
+        txtreceipt.AppendText("" + vbNewLine)
+        txtreceipt.AppendText("Period Start:" + vbTab + DateTimePicker1.Value.Date + vbNewLine)
+        txtreceipt.AppendText("Period End:" + vbTab + DateTimePicker2.Value.Date + vbNewLine)
+        txtreceipt.AppendText("= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = " + vbNewLine)
+        txtreceipt.AppendText(vbTab + vbTab + vbTab + vbTab + vbTab & "SALARY INFO" + vbNewLine)
+        txtreceipt.AppendText("Total Days Work: " + vbTab + tbtotaldaywork.Text + vbNewLine)
+        txtreceipt.AppendText("No. Hours of Work:" + vbTab + HoursTB.Text + vbNewLine)
+        txtreceipt.AppendText("Allowences:" + vbTab + vbTab + AllowencesTB.Text + vbNewLine)
+        txtreceipt.AppendText("Basic Pay Per Hour:" + vbTab + BasicTB.Text + vbNewLine)
+        txtreceipt.AppendText("" + vbNewLine)
+        txtreceipt.AppendText("" + vbNewLine)
+        txtreceipt.AppendText("Total Salary:" + vbTab + SalaryTB.Text + vbNewLine)
+        txtreceipt.AppendText("= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = " + vbNewLine)
+        txtreceipt.AppendText(vbTab + vbTab + vbTab + vbTab + vbTab & "DEDUCTION" + vbNewLine)
+        txtreceipt.AppendText("SOCSO Percentage:" + vbTab + ComboBox1.SelectedItem + vbNewLine)
+        txtreceipt.AppendText("Income Tax:" + vbTab + vbTab + TaxTB.Text + vbNewLine)
+        txtreceipt.AppendText("Employment Insurance" + vbTab + InsuranceTB.Text + vbNewLine)
+        txtreceipt.AppendText("" + vbNewLine)
+        txtreceipt.AppendText("" + vbNewLine)
+        txtreceipt.AppendText("Total Deduction:" + vbTab + TotalTB.Text + vbTab + "Total Net Pay:" + vbTab + NetPayTB.Text + vbNewLine)
+        txtreceipt.AppendText("= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = " + vbNewLine)
+        txtreceipt.AppendText(vbTab & "Due Date: " + DateTime.Now.ToString("dd/MM/yyyy") & vbTab + vbTab + vbTab + vbTab + vbTab + vbTab & "Time: " & DateTime.Now.ToString("HH:mm:ss") + vbNewLine)
+        txtreceipt.AppendText("= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = " + vbNewLine)
+        'txtreceipt.AppendText()
+        PrintPreviewDialog1.Document = PrintDocument1
+        PrintPreviewDialog1.ShowDialog()
+
+    End Sub
+
+    Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
+        'Dim fnttext As Font = txtreceipt.Font
+        e.Graphics.DrawString(txtreceipt.Text, Font, Brushes.Black, 140, 140)
 
     End Sub
 End Class
