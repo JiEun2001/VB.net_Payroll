@@ -31,10 +31,10 @@ Partial Class Form2
         'Calculatorbtn
         '
         Me.Calculatorbtn.BackColor = System.Drawing.Color.Transparent
-        Me.Calculatorbtn.Location = New System.Drawing.Point(33, 108)
-        Me.Calculatorbtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Calculatorbtn.Location = New System.Drawing.Point(25, 88)
+        Me.Calculatorbtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Calculatorbtn.Name = "Calculatorbtn"
-        Me.Calculatorbtn.Size = New System.Drawing.Size(167, 39)
+        Me.Calculatorbtn.Size = New System.Drawing.Size(125, 32)
         Me.Calculatorbtn.TabIndex = 0
         Me.Calculatorbtn.Text = "Net Salary Calculator"
         Me.Calculatorbtn.UseVisualStyleBackColor = False
@@ -42,10 +42,10 @@ Partial Class Form2
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.Location = New System.Drawing.Point(296, 108)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button1.Location = New System.Drawing.Point(222, 88)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(183, 39)
+        Me.Button1.Size = New System.Drawing.Size(137, 32)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Employee"
         Me.Button1.UseVisualStyleBackColor = False
@@ -53,26 +53,26 @@ Partial Class Form2
         'Exitbtn
         '
         Me.Exitbtn.BackColor = System.Drawing.Color.Transparent
-        Me.Exitbtn.Location = New System.Drawing.Point(205, 175)
-        Me.Exitbtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Exitbtn.Location = New System.Drawing.Point(154, 142)
+        Me.Exitbtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Exitbtn.Name = "Exitbtn"
-        Me.Exitbtn.Size = New System.Drawing.Size(87, 37)
+        Me.Exitbtn.Size = New System.Drawing.Size(65, 30)
         Me.Exitbtn.TabIndex = 2
         Me.Exitbtn.Text = "Exit"
         Me.Exitbtn.UseVisualStyleBackColor = False
         '
         'Form2
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(499, 313)
+        Me.ClientSize = New System.Drawing.Size(374, 254)
         Me.Controls.Add(Me.Exitbtn)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Calculatorbtn)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form2"

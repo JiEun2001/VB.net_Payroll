@@ -164,4 +164,12 @@ Public Class Form1
         e.Graphics.DrawString(txtreceipt.Text, Font, Brushes.Black, 140, 140)
 
     End Sub
+
+    Private Sub Total_Click(sender As Object, e As EventArgs) Handles Total.Click
+
+    End Sub
+
+    Private Sub AllowencesTB_TextChanged(sender As Object, e As EventArgs) Handles AllowencesTB.TextChanged
+
+    End Sub
 End Class
