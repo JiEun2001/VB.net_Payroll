@@ -32,7 +32,17 @@ Represents a strongly typed in-memory cache of data.
 Represents the strongly named DataTable class.
 </summary>
 </member>
+<member name="T:Payroll.vbprojectDataSet.EmployeeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
 <member name="T:Payroll.vbprojectDataSet.LogInRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Payroll.vbprojectDataSet.EmployeeRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -42,7 +52,17 @@ Represents strongly named DataRow class.
 Row event argument class
 </summary>
 </member>
+<member name="T:Payroll.vbprojectDataSet.EmployeeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
 <member name="T:Payroll.vbprojectDataSetTableAdapters.LogInTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Payroll.vbprojectDataSetTableAdapters.EmployeeTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

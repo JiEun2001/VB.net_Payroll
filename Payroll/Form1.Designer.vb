@@ -48,12 +48,13 @@ Partial Class Form1
         Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.tbtotaldaywork = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.btnPrint = New System.Windows.Forms.Button()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
-        Me.tbtotaldaywork = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.txtreceipt = New System.Windows.Forms.RichTextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -303,6 +304,7 @@ Partial Class Form1
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.Controls.Add(Me.ComboBox2)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.tbtotaldaywork)
         Me.GroupBox1.Controls.Add(Me.Hours)
@@ -320,6 +322,33 @@ Partial Class Form1
         Me.GroupBox1.Size = New System.Drawing.Size(315, 252)
         Me.GroupBox1.TabIndex = 34
         Me.GroupBox1.TabStop = False
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(160, 8)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(132, 24)
+        Me.ComboBox2.TabIndex = 37
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(16, 39)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(113, 17)
+        Me.Label1.TabIndex = 19
+        Me.Label1.Text = "Total Days Work"
+        '
+        'tbtotaldaywork
+        '
+        Me.tbtotaldaywork.Location = New System.Drawing.Point(160, 39)
+        Me.tbtotaldaywork.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbtotaldaywork.Name = "tbtotaldaywork"
+        Me.tbtotaldaywork.ReadOnly = True
+        Me.tbtotaldaywork.Size = New System.Drawing.Size(132, 22)
+        Me.tbtotaldaywork.TabIndex = 18
         '
         'GroupBox2
         '
@@ -363,24 +392,6 @@ Partial Class Form1
         'PrintDocument1
         '
         '
-        'tbtotaldaywork
-        '
-        Me.tbtotaldaywork.Location = New System.Drawing.Point(160, 39)
-        Me.tbtotaldaywork.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbtotaldaywork.Name = "tbtotaldaywork"
-        Me.tbtotaldaywork.ReadOnly = True
-        Me.tbtotaldaywork.Size = New System.Drawing.Size(132, 22)
-        Me.tbtotaldaywork.TabIndex = 18
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(16, 39)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(113, 17)
-        Me.Label1.TabIndex = 19
-        Me.Label1.Text = "Total Days Work"
-        '
         'txtreceipt
         '
         Me.txtreceipt.Location = New System.Drawing.Point(710, 12)
@@ -411,7 +422,10 @@ Partial Class Form1
         Me.Controls.Add(Me.Total)
         Me.Controls.Add(Me.PeriodE)
         Me.Controls.Add(Me.PeriodS)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.GroupBox1.ResumeLayout(False)
@@ -455,4 +469,5 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents tbtotaldaywork As TextBox
     Friend WithEvents txtreceipt As RichTextBox
+    Friend WithEvents ComboBox2 As ComboBox
 End Class

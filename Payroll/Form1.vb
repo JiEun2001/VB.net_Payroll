@@ -1,4 +1,6 @@
-﻿Public Class Form1
+﻿Imports System.Data.OleDb
+Public Class Form1
+    Dim connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Master_vb\Payroll\vbproject.accdb")
     Private Sub PeriodS_Click(sender As Object, e As EventArgs) Handles PeriodS.Click
 
     End Sub
@@ -8,7 +10,14 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        connection.Open()
+        Dim cmd1 As New OleDbCommand("Select EmployeeName from Employee", connection)
+        Dim dr As OleDbDataReader = cmd1.ExecuteReader
+        While dr.Read
+            ComboBox2.Items.Add(dr(0).ToString)
+        End While
+        dr.Close()
+        connection.Close()
     End Sub
 
     Private Sub CloseB_Click(sender As Object, e As EventArgs) Handles CloseB.Click
@@ -41,58 +50,64 @@
 
         'Label1.Text = totaldays
         If Convert.ToInt32(countdays.Days) >= 0 Then
-            'total salary
-            tbtotaldaywork.Text = totaldays
-            If AllowencesTB.Text.Equals("") Then
-                AllowencesTB.Text = "0"
-            End If
-            Try
-                totalsalary = ((totaldays * HoursTB.Text) * BasicTB.Text) + AllowencesTB.Text
-            Catch ex As Exception
-                MsgBox("Pleaase insert all data", MsgBoxStyle.Exclamation)
-            End Try
-            SalaryTB.Text = totalsalary.ToString
-
-            'total deduction
-            If ComboBox1.Text.Equals("") Then
-                MsgBox("Please choose SOCSO %!", MsgBoxStyle.Exclamation)
+            If ComboBox2.SelectedItem = "" Then
+                MsgBox("Please choose Employee!", MsgBoxStyle.Exclamation)
             Else
-                If InsuranceTB.Text.Equals("") Then
-                    MsgBox("Please Employment Insurance!", MsgBoxStyle.Exclamation)
+
+                'total salary
+                tbtotaldaywork.Text = totaldays
+                If AllowencesTB.Text.Equals("") Then
+                    AllowencesTB.Text = "0"
+                End If
+                Try
+                    totalsalary = ((totaldays * HoursTB.Text) * BasicTB.Text) + AllowencesTB.Text
+                Catch ex As Exception
+                    MsgBox("Pleaase insert all data", MsgBoxStyle.Exclamation)
+                End Try
+                SalaryTB.Text = totalsalary.ToString
+
+                'total deduction
+                If ComboBox1.Text.Equals("") Then
+                    MsgBox("Please choose SOCSO %!", MsgBoxStyle.Exclamation)
                 Else
-
-                    If CInt(InsuranceTB.Text) < 0 Or CInt(InsuranceTB.Text) > 100 Then
-                        MsgBox("Please insert Employment Insurance from 0 to 100", MsgBoxStyle.Exclamation)
+                    If InsuranceTB.Text.Equals("") Then
+                        MsgBox("Please Employment Insurance!", MsgBoxStyle.Exclamation)
                     Else
-                        totalsalarychange = Convert.ToDouble(totalsalary)
 
-                        socso = Convert.ToDouble(ComboBox1.SelectedItem) / 100
-                        'Label2.Text = totalsalarychange
-                        totalsalarychange = totalsalarychange - (totalsalarychange * socso)
-                        'Label3.Text = Math.Round(totalsalarychange, 2)
+                        If CInt(InsuranceTB.Text) < 0 Or CInt(InsuranceTB.Text) > 100 Then
+                            MsgBox("Please insert Employment Insurance from 0 to 100", MsgBoxStyle.Exclamation)
+                        Else
+                            totalsalarychange = Convert.ToDouble(totalsalary)
 
-                        tax = Convert.ToDouble(TaxTB.Text) / 100
-                        totalsalarychange = totalsalarychange - (totalsalarychange * tax)
-                        'Label4.Text = Math.Round(totalsalarychange, 2)
+                            socso = Convert.ToDouble(ComboBox1.SelectedItem) / 100
+                            'Label2.Text = totalsalarychange
+                            totalsalarychange = totalsalarychange - (totalsalarychange * socso)
+                            'Label3.Text = Math.Round(totalsalarychange, 2)
 
-                        insurance = Convert.ToDouble(InsuranceTB.Text) / 100
-                        totalsalarychange = totalsalarychange - (totalsalarychange * insurance)
-                        'Label5.Text = Math.Round(totalsalarychange, 2)
+                            tax = Convert.ToDouble(TaxTB.Text) / 100
+                            totalsalarychange = totalsalarychange - (totalsalarychange * tax)
+                            'Label4.Text = Math.Round(totalsalarychange, 2)
 
-
-                        totaldeduction = totalsalary - totalsalarychange
-                        TotalTB.Text = "RM " & totaldeduction.ToString("N2")
-
-                        NetPayTB.Text = "RM " & (totalsalary - totaldeduction).ToString("N2")
+                            insurance = Convert.ToDouble(InsuranceTB.Text) / 100
+                            totalsalarychange = totalsalarychange - (totalsalarychange * insurance)
+                            'Label5.Text = Math.Round(totalsalarychange, 2)
 
 
+                            totaldeduction = totalsalary - totalsalarychange
+                            TotalTB.Text = "RM " & totaldeduction.ToString("N2")
 
+                            NetPayTB.Text = "RM " & (totalsalary - totaldeduction).ToString("N2")
+
+
+
+                        End If
                     End If
                 End If
             End If
 
-                Else
-                Label1.Text = "error"
+
+        Else
+            Label1.Text = "Check the dates"
         End If
 
     End Sub
@@ -114,6 +129,7 @@
         txtreceipt.AppendText(vbTab + vbTab + vbTab + vbTab + vbTab & "PAY-SLIP" + vbNewLine)
         txtreceipt.AppendText("" + vbNewLine)
         txtreceipt.AppendText("" + vbNewLine)
+        txtreceipt.AppendText("Employee Name: " + ComboBox2.SelectedItem.ToString.ToUpper + vbNewLine)
         txtreceipt.AppendText("" + vbNewLine)
         txtreceipt.AppendText("Period Start:" + vbTab + DateTimePicker1.Value.Date + vbNewLine)
         txtreceipt.AppendText("Period End:" + vbTab + DateTimePicker2.Value.Date + vbNewLine)
@@ -128,9 +144,9 @@
         txtreceipt.AppendText("Total Salary:" + vbTab + SalaryTB.Text + vbNewLine)
         txtreceipt.AppendText("= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = " + vbNewLine)
         txtreceipt.AppendText(vbTab + vbTab + vbTab + vbTab + vbTab & "DEDUCTION" + vbNewLine)
-        txtreceipt.AppendText("SOCSO Percentage:" + vbTab + ComboBox1.SelectedItem + vbNewLine)
-        txtreceipt.AppendText("Income Tax:" + vbTab + vbTab + TaxTB.Text + vbNewLine)
-        txtreceipt.AppendText("Employment Insurance" + vbTab + InsuranceTB.Text + vbNewLine)
+        txtreceipt.AppendText("SOCSO Percentage:" + vbTab + ComboBox1.SelectedItem + "%" + vbNewLine)
+        txtreceipt.AppendText("Income Tax:" + vbTab + vbTab + TaxTB.Text + "%" + vbNewLine)
+        txtreceipt.AppendText("Employment Insurance" + vbTab + InsuranceTB.Text + "%" + vbNewLine)
         txtreceipt.AppendText("" + vbNewLine)
         txtreceipt.AppendText("" + vbNewLine)
         txtreceipt.AppendText("Total Deduction:" + vbTab + TotalTB.Text + vbTab + "Total Net Pay:" + vbTab + NetPayTB.Text + vbNewLine)

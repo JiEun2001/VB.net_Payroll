@@ -35,77 +35,78 @@ Partial Class Form4
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Location = New System.Drawing.Point(220, 75)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(293, 92)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(55, 13)
+        Me.Label1.Size = New System.Drawing.Size(73, 17)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Username"
         '
         'TBUsername
         '
-        Me.TBUsername.Location = New System.Drawing.Point(165, 113)
-        Me.TBUsername.Margin = New System.Windows.Forms.Padding(2)
+        Me.TBUsername.Location = New System.Drawing.Point(220, 139)
+        Me.TBUsername.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TBUsername.Name = "TBUsername"
-        Me.TBUsername.Size = New System.Drawing.Size(156, 20)
+        Me.TBUsername.Size = New System.Drawing.Size(207, 22)
         Me.TBUsername.TabIndex = 1
         '
         'btnLogin
         '
         Me.btnLogin.BackColor = System.Drawing.Color.Transparent
-        Me.btnLogin.Location = New System.Drawing.Point(165, 234)
-        Me.btnLogin.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnLogin.Location = New System.Drawing.Point(220, 288)
+        Me.btnLogin.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(61, 24)
+        Me.btnLogin.Size = New System.Drawing.Size(81, 30)
         Me.btnLogin.TabIndex = 3
         Me.btnLogin.Text = "Log In"
         Me.btnLogin.UseVisualStyleBackColor = False
         '
         'TBPassword
         '
-        Me.TBPassword.Location = New System.Drawing.Point(165, 191)
-        Me.TBPassword.Margin = New System.Windows.Forms.Padding(2)
+        Me.TBPassword.Location = New System.Drawing.Point(220, 235)
+        Me.TBPassword.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TBPassword.Name = "TBPassword"
         Me.TBPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TBPassword.Size = New System.Drawing.Size(156, 20)
+        Me.TBPassword.Size = New System.Drawing.Size(207, 22)
         Me.TBPassword.TabIndex = 2
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(220, 156)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(293, 192)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(53, 13)
+        Me.Label2.Size = New System.Drawing.Size(69, 17)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Password"
         '
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Button2.Location = New System.Drawing.Point(259, 234)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button2.Location = New System.Drawing.Point(345, 288)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(62, 24)
+        Me.Button2.Size = New System.Drawing.Size(83, 30)
         Me.Button2.TabIndex = 4
         Me.Button2.Text = "Exit"
         Me.Button2.UseVisualStyleBackColor = False
         '
         'Form4
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(476, 307)
+        Me.ClientSize = New System.Drawing.Size(635, 378)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.TBPassword)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.TBUsername)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "Form4"
         Me.Text = "2"
         Me.ResumeLayout(False)
