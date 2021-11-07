@@ -1,6 +1,6 @@
 ﻿Imports System.Data.OleDb
 Public Class Form1
-    Dim connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Awie\OneDrive\SEM 5\VB.Net\MyPayroll\VB.net_Payroll\Payroll\vbproject.accdb")
+    Dim connection As New OleDbConnection(My.Settings.vbprojectConnectionString)
     Private Sub PeriodS_Click(sender As Object, e As EventArgs) Handles PeriodS.Click
 
     End Sub

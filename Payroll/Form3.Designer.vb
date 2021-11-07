@@ -64,22 +64,22 @@ Partial Class Form3
         Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(267, 62)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView1.Location = New System.Drawing.Point(356, 76)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(476, 249)
-        Me.DataGridView1.TabIndex = 0
+        Me.DataGridView1.Size = New System.Drawing.Size(635, 306)
+        Me.DataGridView1.TabIndex = 6
         '
         'btnAdd
         '
         Me.btnAdd.BackColor = System.Drawing.Color.Transparent
-        Me.btnAdd.Location = New System.Drawing.Point(69, 352)
-        Me.btnAdd.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnAdd.Location = New System.Drawing.Point(92, 433)
+        Me.btnAdd.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(68, 26)
+        Me.btnAdd.Size = New System.Drawing.Size(91, 32)
         Me.btnAdd.TabIndex = 1
         Me.btnAdd.Text = "Add"
         Me.btnAdd.UseVisualStyleBackColor = False
@@ -87,33 +87,33 @@ Partial Class Form3
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Button2.Location = New System.Drawing.Point(316, 352)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button2.Location = New System.Drawing.Point(421, 433)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(68, 26)
-        Me.Button2.TabIndex = 2
+        Me.Button2.Size = New System.Drawing.Size(91, 32)
+        Me.Button2.TabIndex = 3
         Me.Button2.Text = "Update"
         Me.Button2.UseVisualStyleBackColor = False
         '
         'btnDelete
         '
         Me.btnDelete.BackColor = System.Drawing.Color.Transparent
-        Me.btnDelete.Location = New System.Drawing.Point(435, 352)
-        Me.btnDelete.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnDelete.Location = New System.Drawing.Point(580, 433)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(68, 26)
-        Me.btnDelete.TabIndex = 3
+        Me.btnDelete.Size = New System.Drawing.Size(91, 32)
+        Me.btnDelete.TabIndex = 4
         Me.btnDelete.Text = "Delete"
         Me.btnDelete.UseVisualStyleBackColor = False
         '
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.Color.Transparent
-        Me.Button4.Location = New System.Drawing.Point(649, 352)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button4.Location = New System.Drawing.Point(865, 433)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(68, 26)
-        Me.Button4.TabIndex = 4
+        Me.Button4.Size = New System.Drawing.Size(91, 32)
+        Me.Button4.TabIndex = 5
         Me.Button4.Text = "Exit"
         Me.Button4.UseVisualStyleBackColor = False
         '
@@ -130,103 +130,98 @@ Partial Class Form3
         Me.GroupBox1.Controls.Add(Me.tbName)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.tbID)
-        Me.GroupBox1.Location = New System.Drawing.Point(11, 62)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Location = New System.Drawing.Point(15, 76)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox1.Size = New System.Drawing.Size(239, 249)
-        Me.GroupBox1.TabIndex = 5
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(319, 306)
+        Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Information"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(14, 193)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Location = New System.Drawing.Point(19, 238)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(29, 13)
+        Me.Label5.Size = New System.Drawing.Size(37, 17)
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "Role"
         '
         'tbPosition
         '
-        Me.tbPosition.Location = New System.Drawing.Point(75, 190)
-        Me.tbPosition.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tbPosition.Location = New System.Drawing.Point(100, 234)
+        Me.tbPosition.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tbPosition.Name = "tbPosition"
-        Me.tbPosition.Size = New System.Drawing.Size(142, 20)
-        Me.tbPosition.TabIndex = 8
+        Me.tbPosition.Size = New System.Drawing.Size(188, 22)
+        Me.tbPosition.TabIndex = 4
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(14, 153)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(19, 188)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(42, 13)
+        Me.Label4.Size = New System.Drawing.Size(54, 17)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "No. Tel"
         '
         'tbPhoneNumber
         '
-        Me.tbPhoneNumber.Location = New System.Drawing.Point(75, 150)
-        Me.tbPhoneNumber.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tbPhoneNumber.Location = New System.Drawing.Point(100, 185)
+        Me.tbPhoneNumber.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tbPhoneNumber.Name = "tbPhoneNumber"
-        Me.tbPhoneNumber.Size = New System.Drawing.Size(142, 20)
-        Me.tbPhoneNumber.TabIndex = 6
+        Me.tbPhoneNumber.Size = New System.Drawing.Size(188, 22)
+        Me.tbPhoneNumber.TabIndex = 3
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(14, 115)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(19, 142)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(30, 13)
+        Me.Label3.Size = New System.Drawing.Size(39, 17)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Time"
         '
         'tbTimeSchedule
         '
-        Me.tbTimeSchedule.Location = New System.Drawing.Point(75, 112)
-        Me.tbTimeSchedule.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tbTimeSchedule.Location = New System.Drawing.Point(100, 138)
+        Me.tbTimeSchedule.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tbTimeSchedule.Name = "tbTimeSchedule"
-        Me.tbTimeSchedule.Size = New System.Drawing.Size(142, 20)
-        Me.tbTimeSchedule.TabIndex = 4
+        Me.tbTimeSchedule.Size = New System.Drawing.Size(188, 22)
+        Me.tbTimeSchedule.TabIndex = 2
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(14, 75)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(19, 92)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(35, 13)
-        Me.Label2.TabIndex = 3
+        Me.Label2.Size = New System.Drawing.Size(45, 17)
+        Me.Label2.TabIndex = 4
         Me.Label2.Text = "Name"
         '
         'tbName
         '
-        Me.tbName.Location = New System.Drawing.Point(75, 72)
-        Me.tbName.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tbName.Location = New System.Drawing.Point(100, 89)
+        Me.tbName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tbName.Name = "tbName"
-        Me.tbName.Size = New System.Drawing.Size(142, 20)
-        Me.tbName.TabIndex = 2
+        Me.tbName.Size = New System.Drawing.Size(188, 22)
+        Me.tbName.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(14, 36)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(19, 44)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(18, 13)
-        Me.Label1.TabIndex = 1
+        Me.Label1.Size = New System.Drawing.Size(21, 17)
+        Me.Label1.TabIndex = 3
         Me.Label1.Text = "ID"
         '
         'tbID
         '
-        Me.tbID.Location = New System.Drawing.Point(75, 33)
-        Me.tbID.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tbID.Location = New System.Drawing.Point(100, 41)
+        Me.tbID.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tbID.Name = "tbID"
-        Me.tbID.Size = New System.Drawing.Size(142, 20)
+        Me.tbID.Size = New System.Drawing.Size(188, 22)
         Me.tbID.TabIndex = 0
         '
         'VbprojectDataSet1
@@ -256,11 +251,11 @@ Partial Class Form3
         'btnClear
         '
         Me.btnClear.BackColor = System.Drawing.Color.Transparent
-        Me.btnClear.Location = New System.Drawing.Point(191, 352)
-        Me.btnClear.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnClear.Location = New System.Drawing.Point(255, 433)
+        Me.btnClear.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(68, 26)
-        Me.btnClear.TabIndex = 6
+        Me.btnClear.Size = New System.Drawing.Size(91, 32)
+        Me.btnClear.TabIndex = 2
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = False
         '
@@ -271,11 +266,11 @@ Partial Class Form3
         '
         'Form3
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(754, 405)
+        Me.ClientSize = New System.Drawing.Size(1005, 498)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button4)
@@ -284,11 +279,10 @@ Partial Class Form3
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.DataGridView1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form3"
-        Me.Text = "Form3"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

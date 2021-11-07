@@ -108,7 +108,6 @@ Partial Class Form4
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form4"
-        Me.Text = "2"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

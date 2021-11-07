@@ -1,6 +1,6 @@
 ﻿Imports System.Data.OleDb
 Public Class Form3
-    Dim connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source= C:\Users\Awie\OneDrive\SEM 5\VB.Net\MyPayroll\VB.net_Payroll\Payroll\vbproject.accdb")
+    Dim connection As New OleDbConnection(My.Settings.vbprojectConnectionString)
     Protected Overrides ReadOnly Property CreateParams As System.Windows.Forms.CreateParams
         Get
             Dim par As CreateParams = MyBase.CreateParams
@@ -53,12 +53,18 @@ Public Class Form3
     Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
         Dim index As Integer
         index = e.RowIndex
-        Dim selectedrow As DataGridViewRow = DataGridView1.Rows(index)
-        tbID.Text = selectedrow.Cells(0).Value.ToString
-        tbName.Text = selectedrow.Cells(1).Value.ToString
-        tbTimeSchedule.Text = selectedrow.Cells(2).Value.ToString
-        tbPhoneNumber.Text = selectedrow.Cells(3).Value.ToString
-        tbPosition.Text = selectedrow.Cells(4).Value.ToString
+        If index >= 0 Then
+            Dim selectedrow As DataGridViewRow = DataGridView1.Rows(index)
+            tbID.Text = selectedrow.Cells(0).Value.ToString
+            tbName.Text = selectedrow.Cells(1).Value.ToString
+            tbTimeSchedule.Text = selectedrow.Cells(2).Value.ToString
+            tbPhoneNumber.Text = selectedrow.Cells(3).Value.ToString
+            tbPosition.Text = selectedrow.Cells(4).Value.ToString
+        Else
+            MsgBox("Error", MsgBoxStyle.Exclamation)
+        End If
+
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
