@@ -64,14 +64,14 @@ Public Class Form1
                 Catch ex As Exception
                     MsgBox("Pleaase insert all data", MsgBoxStyle.Exclamation)
                 End Try
-                SalaryTB.Text = totalsalary.ToString
+                SalaryTB.Text = "RM " & totalsalary.ToString
 
                 'total deduction
                 If ComboBox1.Text.Equals("") Then
                     MsgBox("Please choose SOCSO %!", MsgBoxStyle.Exclamation)
                 Else
                     If InsuranceTB.Text.Equals("") Then
-                        MsgBox("Please Employment Insurance!", MsgBoxStyle.Exclamation)
+                        MsgBox("Please Insert Employment Insurance!", MsgBoxStyle.Exclamation)
                     Else
 
                         If CInt(InsuranceTB.Text) < 0 Or CInt(InsuranceTB.Text) > 100 Then
@@ -107,7 +107,7 @@ Public Class Form1
 
 
         Else
-            Label1.Text = "Check the dates"
+            MsgBox("Error! Please check the dates", MsgBoxStyle.Exclamation)
         End If
 
     End Sub
